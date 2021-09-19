@@ -1,0 +1,54 @@
+.header{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-header{
+    width: 95vw;
+    height: 200px;
+    border-radius: 10px;
+    margin: 6vh 0 0 0;
+}
+
+.profile{
+    border: 4px #fff solid;
+    border-radius: 50%;
+    width: 134px;
+    height: 134px;
+    margin: -67px 0 0 0;
+    overflow: hidden;
+}
+
+.imgProfile{
+    margin: auto;
+}
+
+address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 334px;
+    font-style: unset;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    margin: 1em 0 0 0;
+}
+
+.contact div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact div img{
+    width: 36px;
+}
