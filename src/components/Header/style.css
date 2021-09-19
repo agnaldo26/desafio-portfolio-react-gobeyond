@@ -22,7 +22,7 @@
 }
 
 .imgProfile{
-    margin: auto;
+    width:100%;
 }
 
 address{
@@ -31,6 +31,7 @@ address{
     align-items: center;
     width: 334px;
     font-style: unset;
+    cursor: default;
 }
 
 .contact{
@@ -42,13 +43,22 @@ address{
     margin: 1em 0 0 0;
 }
 
-.contact div{
+.contact a{
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    width: 36px;
+    transition: all .2s ease-in-out;
 }
 
-.contact div img{
-    width: 36px;
+.contact a:hover{
+    width: 34px;
+    font-size: 10px;
+}
+
+.contact a img{
+    width: 100%;
 }

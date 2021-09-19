@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 2em 0 0 0;
+}
+
+nav{
+    border-radius: 10px;
+    background-color: #e1e1e1;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e1e1e1;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+button:hover{
+    background-color: #C6C6C6;
+}
+
+.container{
+    width: 95vw;
+    margin-top: 10px;
+}
