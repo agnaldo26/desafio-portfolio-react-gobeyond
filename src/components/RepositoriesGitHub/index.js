@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './style.css';
 
-function RepositoriesGitHub() {
-    const user = 'agnaldo26';
+function RepositoriesGitHub(props) {
     const [repositories, setRepositories] = useState([]);
 
     useEffect(() => {
-        fetch(`https://api.github.com/users/${user}/repos`, {
+        fetch(`https://api.github.com/users/${props.user}/repos`, {
             method: 'GET'
         }).then(response => {
             response.json().then((data) => {
@@ -20,7 +19,6 @@ function RepositoriesGitHub() {
                         url: repository.url,
                     });
                 })
-                
                 setRepositories(infoRepositories)
             })
 
@@ -29,11 +27,9 @@ function RepositoriesGitHub() {
     return (
         <div className='repositories-container'>
             {repositories.map((repository) => {
-                    return (
-                        <div key={repository.id} className='item-container'>
-                            <a href={repository.url} target='_blank'>{repository.name}</a>
-                        </div>
-                    )
+                return (
+                    <a href={repository.url} key={repository.id} target='_blank' className='item-repository-container'>{repository.name}</a>
+                )
             })}
         </div>
     )

@@ -1,0 +1,44 @@
+.certifications-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item-certification-container{
+    width: 230px;
+    height: 216px;
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    filter: drop-shadow(0px 4px 4px #000);
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+.item-certification-container:hover{
+    margin-top: 0;
+}
+
+.vtex{
+    background-image: url('https://itforum.com.br/wp-content/uploads/2020/11/vtex-reproducao.jpg');
+}
+
+.full-stack{
+    background-image: url('https://th.bing.com/th/id/R.80afdeaa2dd1851ec7739491d8a251a8?rik=RGqyYGY%2frexEJA&pid=ImgRaw&r=0');
+}
+
+.html{
+    background-image: url('https://th.bing.com/th/id/OIP.d5-pDpGNuK_0a36P9R1H_gHaD3?pid=ImgDet&rs=1');
+}
+
+.javascript{
+    background-image: url('https://th.bing.com/th/id/R.5625753847ac19e2f541c8ef7f41e126?rik=MmVreo0rDk5%2blA&pid=ImgRaw&r=0');
+}

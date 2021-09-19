@@ -5,12 +5,12 @@
     justify-content: space-around;
 }
 
-.item-container{
+.item-repository-container{
     width: 230px;
     height: 216px;
     background-image: url('../../assets/background-github.jpg');
     background-size: cover;
-    background-position-x: -50px;
+    background-position-x: center;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
@@ -18,14 +18,18 @@
     align-items: flex-end;
     cursor: pointer;
     transition: all .2s ease-in-out;
-}
-
-.item-container:hover{
-    margin-top: 5px;
-}
-
-a{
+    filter: drop-shadow(0px 4px 4px #000);
     text-decoration: none;
     color: #fff;
     font-weight: 900;
+}
+
+.item-repository-container:hover{
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1023px){
+    .item-reposytory-container{
+        width: 40%;
+    }
 }
