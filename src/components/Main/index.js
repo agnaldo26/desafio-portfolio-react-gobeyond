@@ -18,7 +18,7 @@ function Main() {
                 set1Active(true)
                 set2Active(false);
                 set3Active(false);
-            }} className={tab1Active ? 'active' : ''}><img src={octocat}/>{title}</button>
+            }} className={tab1Active ? 'active' : ''}><img src={octocat} alt='octocat'/>{title}</button>
         )
     }
 
@@ -28,7 +28,7 @@ function Main() {
                 set1Active(false)
                 set2Active(true);
                 set3Active(false);
-            }} className={tab2Active ? 'active' : ''}><img src={certification}/>{title}</button>
+            }} className={tab2Active ? 'active' : ''}><img src={certification} alt='certification'/>{title}</button>
         )
     }
 
@@ -42,7 +42,7 @@ function Main() {
                 } else {
                     set3Active(true)
                 }
-            }} className={tab3Active ? 'active' : ''}><img src={programing}/>{title}</button>
+            }} className={tab3Active ? 'active' : ''}><img src={programing} alt='programing'/>{title}</button>
         )
     }
 
