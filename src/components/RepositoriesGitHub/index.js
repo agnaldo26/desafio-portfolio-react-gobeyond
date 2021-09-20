@@ -23,7 +23,7 @@ function RepositoriesGitHub(props) {
             })
 
         })
-    }, []);
+    }, [props]);
     return (
         <div className='repositories-container'>
             {repositories.map((repository) => {
