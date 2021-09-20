@@ -28,7 +28,7 @@ function RepositoriesGitHub(props) {
         <div className='repositories-container'>
             {repositories.map((repository) => {
                 return (
-                    <a href={repository.url} key={repository.id} target='_blank' className='item-repository'><span>{repository.name}</span></a>
+                    <a href={repository.url} key={repository.id} target='_blank' rel="noreferrer" className='item-repository'><span>{repository.name}</span></a>
                 )
             })}
         </div>

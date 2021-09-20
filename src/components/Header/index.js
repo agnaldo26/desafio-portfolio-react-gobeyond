@@ -20,16 +20,16 @@ function Header() {
                 <h2>Agnaldo Filho</h2>
                 <h4>Dev Front-End / Go Beyonder</h4>
                 <div className='contact'>
-                    <a className='whatsapp' href={whatsapp} target='_blank'>
+                    <a className='whatsapp' href={whatsapp} target='_blank' rel="noreferrer">
                         <img src={whatsappIcon} className='iconWhatsapp' alt='logo-whatsapp'/>
                         <span>Whatsapp</span>
                     </a>
-                    <a className='linkedin' href={linkedin} target='_blank'>
+                    <a className='linkedin' href={linkedin} target='_blank' rel="noreferrer">
                         <img src={linkedinIcon} alt='logo-linkedin'/>
                         <span>LinkedIn</span>
                     </a>
                     <a className='github' href={github}>
-                        <img src={githubIcon} alt='logo-github'/>
+                        <img src={githubIcon} alt='logo-github' rel="noreferrer"/>
                         <span>GitHub</span>
                     </a>
                 </div>
