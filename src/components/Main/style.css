@@ -3,12 +3,16 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 2em 0 0 0;
 }
 
 nav{
     border-radius: 10px;
     background-color: #e1e1e1;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px;
+    overflow-x: auto;
 }
 
 button{
@@ -18,21 +22,30 @@ button{
     background-color: #e1e1e1;
     color:#818181;
     cursor: pointer;
-    transition: all .4s ease-in-out;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease-in-out;
 }
 
 button:hover{
     background-color: #C6C6C6;
 }
 
+button img{
+    height: 100%;
+}
+
 .container{
     width: 95vw;
-    margin-top: 10px;
+    margin: 10px 0 110px 0;
 }
 
 .active{
     background-color: #000;
     color: #fff;
+    transition: all .3s ease-in-out;
 }
 
 .active:hover{

@@ -5,6 +5,7 @@ import profile from '../../assets/profile.jpg';
 import whatsappIcon from '../../assets/whatsapp-icon.svg';
 import linkedinIcon from '../../assets/linkedin-icon.svg';
 import githubIcon from '../../assets/github-icon.svg';
+
 function Header() {
     const whatsapp = `https://api.whatsapp.com/send?l=pt_BR&phone='55012997049359'&text='Olá! Me interessei pelo seu portfólio, podemos conversar?`;
     const linkedin = 'https://www.linkedin.com/in/agnaldo-pereira-de-souza-silva-filho-8823081a6/';

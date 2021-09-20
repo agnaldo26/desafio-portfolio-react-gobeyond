@@ -5,14 +5,14 @@
     justify-content: space-around;
 }
 
-.item-certification-container{
-    width: 230px;
-    height: 216px;
+.item-certification{
+    width: 200px;
+    height: 190px;
+    background-image: url('../../assets/background-github.jpg');
     background-size: cover;
     background-position-x: center;
     border-radius: 10px;
     margin: 10px;
-    padding: 10px;
     display: flex;
     align-items: flex-end;
     cursor: pointer;
@@ -23,8 +23,17 @@
     font-weight: 900;
 }
 
-.item-certification-container:hover{
+.item-certification:hover{
     margin-top: 0;
+
+}
+
+.item-certification span{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    text-align: center;
 }
 
 .vtex{
@@ -41,4 +50,15 @@
 
 .javascript{
     background-image: url('https://th.bing.com/th/id/R.5625753847ac19e2f541c8ef7f41e126?rik=MmVreo0rDk5%2blA&pid=ImgRaw&r=0');
+}
+
+.database{
+    background-image: url('https://th.bing.com/th/id/R.86309a9cea39dbe0ff4f9c4398f77182?rik=3m06dOFPBnkVCw&pid=ImgRaw&r=0');
+}
+
+@media only screen and (max-width: 420px){
+    .item-certification{
+        width: 160px;
+        height: 160px;
+    }
 }

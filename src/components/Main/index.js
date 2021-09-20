@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import './style.css';
 import RepositoriesGitHub from '../RepositoriesGitHub';
-import Certifications from '../Certifications'
+import Certifications from '../Certifications';
+import HardSkills from '../HardSkills';
+import octocat from '../../assets/octocat.svg';
+import certification from '../../assets/certification.png';
+import programing from '../../assets/programing.png';
 
 function Main() {
     const [tab1Active, set1Active] = useState(true);
@@ -10,27 +14,27 @@ function Main() {
 
     const Tab1 = ({ title }) => {
         return (
-            <button className='projects' onClick={() => {
+            <button onClick={() => {
                 set1Active(true)
                 set2Active(false);
                 set3Active(false);
-            }} className={tab1Active ? 'active' : ''}>{title}</button>
+            }} className={tab1Active ? 'active' : ''}><img src={octocat}/>{title}</button>
         )
     }
 
     const Tab2 = ({ title }) => {
         return (
-            <button className='projects' onClick={() => {
+            <button onClick={() => {
                 set1Active(false)
                 set2Active(true);
                 set3Active(false);
-            }} className={tab2Active ? 'active' : ''}>{title}</button>
+            }} className={tab2Active ? 'active' : ''}><img src={certification}/>{title}</button>
         )
     }
 
-    const Tab3 = ({ title }) => {
+    const Tab3 = ({ title}) => {
         return (
-            <button className='projects' onClick={() => {
+            <button onClick={() => {
                 if (set3Active) {
                     set1Active(false);
                     set2Active(false);
@@ -38,7 +42,7 @@ function Main() {
                 } else {
                     set3Active(true)
                 }
-            }} className={tab3Active ? 'active' : ''}>{title}</button>
+            }} className={tab3Active ? 'active' : ''}><img src={programing}/>{title}</button>
         )
     }
 
@@ -53,18 +57,21 @@ function Main() {
             return (
                 <Certifications />
             )
+        } else if (tab3Active){
+            return(
+                <HardSkills />
+            )
         }
     }
 
     return (
         <main>
             <nav className='tabs'>
-                <Tab1 title='Projetos GitHub' />
-                <Tab2 title='Certifications' />
-                <Tab3 title='Hard skills' />
+                <Tab1 title='Projetos'/>
+                <Tab2 title='Certificações'/>
+                <Tab3 title='Hard skills'/>
             </nav>
             <div className='container'>
-
                 <Container />
             </div>
         </main>

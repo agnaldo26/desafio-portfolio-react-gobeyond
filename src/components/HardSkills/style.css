@@ -1,0 +1,67 @@
+.hardskills-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item-hardskill{
+    width: 200px;
+    height: 190px;
+    background-image: url('../../assets/background-github.jpg');
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    filter: drop-shadow(0px 4px 4px #000);
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+.item-hardskill:hover{
+    margin-top: 0;
+}
+
+.item-hardskill span{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.html{
+    background-image: url('https://th.bing.com/th/id/R.e1d424c4b9be7009dd57ef4e7d58e343?rik=EZ8NO5x85jZ0Vg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-NGHwBncyA68%2fUiMm_8b2ZUI%2fAAAAAAAAAnA%2f17OGXCKI4zE%2fs1600%2fLogo%2bHTML5.JPG&ehk=rnVe3RUksYQ4LMnsZ6Xxyf3F5lkj3Br1Eu6vOVCkYh0%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.css{
+    background-image: url('https://th.bing.com/th/id/R.9befee1944afb39b69ce1e86a763242c?rik=E3DsTkbLB7ztkw&pid=ImgRaw&r=0');
+}
+
+.javascript{
+    background-image: url('https://mizutaniyuji.github.io/my_portfolio/image/Javascript.jpg');
+}
+
+.react{
+    background-image: url('https://th.bing.com/th/id/R.18af6f6f1e8be88aeb4913d2a465bfe6?rik=9QAjrZZzA%2fZ2DA&pid=ImgRaw&r=0');
+}
+
+.javascript{
+    background-image: url('https://th.bing.com/th/id/R.92fcb05d53e8b99c0c835cb0f8c8812f?rik=uwB4mV3lP5L9ag&pid=ImgRaw&r=0');
+}
+
+.node{
+    background-image: url('https://coralogix.com/wp-content/uploads/2018/04/Coralogix-Nodejs-integration.jpg');
+}
+
+@media only screen and (max-width: 420px){
+    .item-hardskill{
+        width: 160px;
+        height: 160px;
+    }
+}
