@@ -33,6 +33,7 @@
     border-radius: 0 0 10px 10px;
     color: #fff;
     text-align: center;
+    padding: .2em;
 }
 
 .html{
@@ -59,7 +60,7 @@
     background-image: url('https://coralogix.com/wp-content/uploads/2018/04/Coralogix-Nodejs-integration.jpg');
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 463px){
     .item-hardskill{
         width: 160px;
         height: 160px;
