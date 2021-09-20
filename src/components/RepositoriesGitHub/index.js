@@ -16,7 +16,7 @@ function RepositoriesGitHub(props) {
                     return infoRepositories.push({
                         id: repository.id,
                         name: repository.name,
-                        url: repository.url,
+                        url: repository.html_url,
                     });
                 })
                 setRepositories(infoRepositories)
