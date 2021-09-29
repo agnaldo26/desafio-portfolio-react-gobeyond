@@ -25,13 +25,13 @@ function RepositoriesGitHub(props) {
         })
     }, [props]);
     return (
-        <div className='repositories-container'>
+        <section className='repositories-container'>
             {repositories.map((repository) => {
                 return (
                     <a href={repository.url} key={repository.id} target='_blank' rel="noreferrer" className='item-repository'><span>{repository.name}</span></a>
                 )
             })}
-        </div>
+        </section>
     )
 }
 

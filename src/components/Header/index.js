@@ -19,7 +19,7 @@ function Header() {
             <address>
                 <h2>Agnaldo Filho</h2>
                 <h4>Dev Front-End / Go Beyonder</h4>
-                <div className='contact'>
+                <section className='contact'>
                     <a className='whatsapp' href={whatsapp} target='_blank' rel="noreferrer">
                         <img src={whatsappIcon} className='iconWhatsapp' alt='logo-whatsapp'/>
                         <span>Whatsapp</span>
@@ -32,7 +32,7 @@ function Header() {
                         <img src={githubIcon} alt='logo-github' rel="noreferrer"/>
                         <span>GitHub</span>
                     </a>
-                </div>
+                </section>
             </address>
         </header>
     )

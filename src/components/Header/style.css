@@ -52,7 +52,7 @@ address{
     cursor: pointer;
     text-decoration: none;
     color: #000;
-    max-width: 100%;
+    width: 54px;
     transition: all .3s ease-in-out;
 }
 
